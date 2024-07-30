@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Илья Гуторов](https://up.htmlacademy.ru/adaptive/32/user/1254821).
-* Наставник: [Николай Колганов] (https://htmlacademy.ru/profile/id794007).
+* Наставник: [Николай Колганов](https://htmlacademy.ru/profile/id794007).
 
 ---
 
