@@ -41,7 +41,11 @@
       <h1 class="txt-h2 clr-negative">Функциональное питание для котов</h1>
       <b class="txt-accent clr-negative">Занялся собой? Займись котом!</b>
       <button class="button button-second" type="button">подобрать программу</button>
-      <img class="nutrition-img" alt="Cat Energy Pro Курица">
+      <picture>
+        <source type="images/png" media="(min-width: 1440px)" srcset="images/index/food-desktop@1x.png 1x, images/index/food-desktop@2x.png 2x" width="552" height="499">
+        <source type="images/png" media="(min-width: 768px)" srcset="images/index/food-tablet@1x.png 1x, images/index/food-tablet@2x.png 2x" width="709" height="609">
+        <img scr="images/index/food-mobile@1x.png" srcset="images/index/food-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Pro">
+      </picture>
     </section>
 
     <section class="program">
@@ -109,8 +113,10 @@
         </div>
 
         <div class="example-options-switch">
-          <img alt="толстый">
-          <img alt="худой">
+          <picture>
+            <source type="images/png" media="(min-width: 768px)" srcset="images/index/cat-slider-tablet@1x.png 1x, images/index/cat-slider-tablet@2x.png 2x" width="709" height="609">
+            <img scr="images/index/cat-slider-mobile@1x.png" srcset="images/index/cat-slider-mobile@2x.png 2x" width="280" height="256" alt="толстый и худой кот">
+          </picture>
         </div>
       </div>
     </section>
@@ -133,25 +139,22 @@
       <img alt="Cat Energy">
     </a>
 
-    <ul class="list-block footer-list">
-      <li class="footer-list-item">
-        <a class="button footer-list-item-button" href="#"></a>
+    <address>
+      <div>
+        <a class="button" href="#"></a>
         <span class="visually-hidden">Vkontakte</span>
-        <svg></svg>
-      </li>
-      <li class="footer-list-item">
-        <a class="button footer-list-item-button" href="#"></a>
+      </div>
+      <div>
+        <a class="button" href="#"></a>
         <span class="visually-hidden">Youtube</span>
-        <svg></svg>
-      </li>
-      <li class="footer-list-item">
-        <a class="button footer-list-item-button" href="#"></a>
+      </div>
+      <div>
+        <a class="button" href="#"></a>
         <span class="visually-hidden">Telegram</span>
-        <svg></svg>
-      </li>
-    </ul>
+      </div>
+    </address>
 
-    <a class="footer-htmlacademy" href="#">
+    <a class="footer-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
       <img alt="Разработано htmlacademy">
     </a>
   </footer>
