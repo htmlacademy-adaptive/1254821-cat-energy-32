@@ -1,0 +1,8 @@
+.position__name {
+  @include txt-Oswald(26px, 26px);
+  @include color ($grey-dark-2, $white);
+}
+
+.position__info {
+  @include txt-Lato(14px, 14px);
+}

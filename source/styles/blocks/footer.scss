@@ -1,0 +1,14 @@
+.footer__info--heading {
+  @include txt-Oswald(16px, 20px);
+  @include color (#111111, $white);
+}
+
+.footer__info--text {
+  @include txt-Lato(14px, 20px);
+  @include color ($grey-dark, $white);
+}
+
+.footer__htmlacademy--text {
+  @include txt-Lato(16px, 20px);
+  @include color ($grey-dark, none);
+}

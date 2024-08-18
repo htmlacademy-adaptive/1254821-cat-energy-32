@@ -1,0 +1,4 @@
+.additional__action {
+  @include txt-Lato(16px, 20px);
+  @include color ($white, none);
+}

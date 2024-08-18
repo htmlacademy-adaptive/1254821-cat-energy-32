@@ -1,0 +1,4 @@
+.promotions__text {
+  @include txt-Oswald(16px, 24px);
+  @include color ($black, $white);
+}

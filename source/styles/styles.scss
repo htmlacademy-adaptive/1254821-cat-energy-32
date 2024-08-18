@@ -1,7 +1,18 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/variables.scss";
+@import "./common/mixin.scss";
+@import "./common/global.scss";
+@import "./common/text.scss";
+@import "./common/button.scss";
 
 /* BLOCKS */
+@import "./blocks/list-block.scss";
 @import "./blocks/header.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/nutrition.scss";
+@import "./blocks/options.scss";
+@import "./blocks/item-card.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/position.scss";
+@import "./blocks/promotions.scss";

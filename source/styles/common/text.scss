@@ -1,0 +1,36 @@
+/* здесь настраивается вся базовая стилизация текста */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.text-h1 {
+  @include txt-Oswald(36px, 36px);
+  @include color ($white, none);
+}
+
+.text-h2 {
+  @include txt-Oswald(36px, 36px);
+  @include color ($black, none);
+}
+
+.text-h2--special {
+  @include txt-Oswald(24px, 24px);
+  @include color ($black, none);
+}
+
+.text-h3 {
+  @include txt-Oswald(24px, 37px);
+  @include color ($black, none);
+}
+
+.text-h3--special {
+  @include txt-Oswald(16px, 20px);
+  @include color ($grey-dark-2, none);
+}

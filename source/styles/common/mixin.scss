@@ -1,0 +1,19 @@
+/* здесь используйте глобальные mixin */
+@mixin txt-Lato ($txt-size, $txt-height) {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: $txt-size;
+  line-height: $txt-height;
+}
+
+@mixin txt-Oswald ($txt-size, $txt-height) {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: $txt-size;
+  line-height: $txt-height;
+}
+
+@mixin color ($color, $clr-bg) {
+  color: $color;
+  background-color: $clr-bg;
+}

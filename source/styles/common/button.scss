@@ -1,0 +1,50 @@
+/* здесь настраиваються все кнопки */
+@mixin button {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button-clean {
+  @include button;
+  text-align: start;
+  padding: 0;
+}
+
+.button-nav {
+  @include txt-Oswald(20px, 20px);
+  @include button;
+  @include color ($black, $white);
+  padding: 0;
+}
+
+.button-green {
+  @include txt-Oswald(16px, 20px);
+  @include button;
+  @include color ($white, $green-basic);
+  padding: 10px;
+}
+
+.button-grey {
+  @include txt-Oswald(16px, 20px);
+  @include button;
+  @include color ($grey-dark, $grey-basic);
+  padding: 10px;
+}
+
+.button-transparent {
+  @include txt-Oswald(16px, 16px);
+  @include button;
+  @include color ($black, none);
+  text-align: start;
+  padding: 4px;
+}
+
+.button-green--form {
+  @include txt-Oswald(20px, 26px);
+  padding: 15px;
+}
