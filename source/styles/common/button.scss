@@ -1,47 +1,31 @@
 /* здесь настраиваються все кнопки */
-@mixin button {
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-  margin: 0;
-  cursor: pointer;
-}
-
-.button-clean {
-  @include button;
-  text-align: start;
-  padding: 0;
+.button-base {
+  @include button (0);
 }
 
 .button-nav {
   @include txt-Oswald(20px, 20px);
-  @include button;
+  @include button (0);
   @include color ($black, $white);
-  padding: 0;
 }
 
 .button-green {
   @include txt-Oswald(16px, 20px);
-  @include button;
+  @include button (10px);
   @include color ($white, $green-basic);
-  padding: 10px;
 }
 
 .button-grey {
   @include txt-Oswald(16px, 20px);
-  @include button;
+  @include button (10px);
   @include color ($grey-dark, $grey-basic);
-  padding: 10px;
 }
 
-.button-transparent {
+.button-inherit {
   @include txt-Oswald(16px, 16px);
-  @include button;
-  @include color ($black, none);
+  @include button (4px);
+  @include color ($black, inherit);
   text-align: start;
-  padding: 4px;
 }
 
 .button-green--form {

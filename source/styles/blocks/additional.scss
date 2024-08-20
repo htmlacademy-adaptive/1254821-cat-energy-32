@@ -1,4 +1,9 @@
 .additional__action {
   @include txt-Lato(16px, 20px);
-  @include color ($white, none);
+  color: $white;
+}
+
+.additional__icon::after {
+  @include element(78px, 81px);
+  background-image: url("../../icons/stack.svg#present");
 }

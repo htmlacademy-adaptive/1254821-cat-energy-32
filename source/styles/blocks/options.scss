@@ -1,14 +1,14 @@
 .options__item--parameter {
   @include txt-Oswald(24px, 24px);
-  @include color ($black, none);
+  color: $black;
 }
 
 .options__item--result {
   @include txt-Lato(12px, 12px);
-  @include color ($grey-dark, none);
+  color: $grey-dark;
 }
 
 .options__special {
   @include txt-Oswald(14px, 20px);
-  @include color ($black, none);
+  color: $black;
 }

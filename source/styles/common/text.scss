@@ -12,25 +12,25 @@
 
 .text-h1 {
   @include txt-Oswald(36px, 36px);
-  @include color ($white, none);
+  color: $white;
 }
 
 .text-h2 {
   @include txt-Oswald(36px, 36px);
-  @include color ($black, none);
+  color: $black;
 }
 
 .text-h2--special {
   @include txt-Oswald(24px, 24px);
-  @include color ($black, none);
+  color: $black;
 }
 
 .text-h3 {
   @include txt-Oswald(24px, 37px);
-  @include color ($black, none);
+  color: $black;
 }
 
 .text-h3--special {
   @include txt-Oswald(16px, 20px);
-  @include color ($grey-dark-2, none);
+  color: $grey-dark-2;
 }

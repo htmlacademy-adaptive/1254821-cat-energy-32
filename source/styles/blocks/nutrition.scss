@@ -1,4 +1,4 @@
 .nutrition__accent {
   @include txt-Oswald(14px, 14px);
-  @include color ($white, none);
+  color: $white;
 }

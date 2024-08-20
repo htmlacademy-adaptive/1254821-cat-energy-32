@@ -17,3 +17,24 @@
   color: $color;
   background-color: $clr-bg;
 }
+
+@mixin button ($indents) {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: $indents;
+  cursor: pointer;
+}
+
+@mixin element ($width, $height) {
+  content: "";
+  display: block;
+  position: relative;
+  width: $width;
+  height: $height;
+  margin: 0;
+}

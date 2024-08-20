@@ -1,0 +1,9 @@
+.info__heading {
+  @include txt-Oswald(16px, 20px);
+  @include color (#111111, $white);
+}
+
+.info__text {
+  @include txt-Lato(14px, 20px);
+  @include color ($grey-dark, $white);
+}

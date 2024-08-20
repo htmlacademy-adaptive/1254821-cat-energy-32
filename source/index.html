@@ -15,25 +15,46 @@
 
 <body>
   <header class="header">
-    <a class="header-logo" href="#">
-      <img alt="Логотип Cat Energy">
-    </a>
+    <nav class="header__icon">
+      <ul class="list-block">
+        <li class="list-block__item">
+          <a class="button-base" href="#" aria-label="Логотип">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/common/logo-desktop.svg" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/common/logo-tablet.svg" width="60" height="50">
+              <img src="images/common/logo-mobile.svg" width="33" height="38" alt="Кнопка">
+            </picture>
+          </a>
+        </li>
+        <li class="list-block__item">
+          <a class="button-base" href="#" aria-label="Cat Energy">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/common/cat-energy.svg" width="118" height="21">
+              <img src="images/common/cat-energy.svg" width="101" height="18" alt="Кнопка">
+            </picture>
+          </a>
+        </li>
+        <li class="list-block__item">
+          <button class="button-base" type="button" aria-label="Открыть меню">
+            <img src="images/common/burger-open.svg" width="24" height="24" alt="Кнопка">
+          </button>
+        </li>
+      </ul>
+    </nav>
 
-    <a class="header-cat-energy" href="#">
-      <img alt="Cat Energy">
-    </a>
-
-    <nav class="header-navigation">
-      <button class="header-nav-button" type="button">Открыть меню</button>
+    <nav class="header__navigation">
+      <button class="button-base" type="button" aria-label="Закрыть меню">
+        <img src="images/common/burger-close.svg" width="18" height="18" alt="Кнопка">
+      </button>
 
       <ul class="list-block">
-        <li class="nav-list-item">
-          <a class="button-nav">Главная</a>
+        <li class="list-block__item">
+          <a class="button-nav" href="#">Главная</a>
         </li>
-        <li class="nav-list-item">
+        <li class="list-block__item">
           <a class="button-nav" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="nav-list-item">
+        <li class="list-block__item">
           <a class="button-nav" href="#">Подбор программы</a>
         </li>
       </ul>
@@ -54,38 +75,44 @@
 
     <section class="program">
       <h2 class="visually-hidden">Программа питания</h2>
-      <div class="program-loss">
+      <div class="program__loss">
+        <div class="program__loss--icon"></div>
         <h3 class="text-h3">Похудение</h3>
         <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <button class="button-transparent" type="button">Каталог slim</button>
+        <button class="button-inherit" type="button">Каталог slim</button>
       </div>
 
-      <div class="program-gain">
+      <div class="program__gain">
+        <div class="program__gain--icon"></div>
         <h3 class="text-h3">Набор массы</h3>
         <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <button class="button-transparent" type="button">Каталог pro</button>
+        <button class="button-inherit" type="button">Каталог pro</button>
       </div>
     </section>
 
     <section class="composition">
       <h2 class="text-h2">Как это работает</h2>
-      <ul class="list-block">
-        <li class="composition-list-item">
+      <ul class="composition__block list-block">
+        <li class="list-block__item item-mix">
+          <div class="item-mix__first"></div>
           <p>Функциональное питание
             содержит только полезные
             питательные вещества.</p>
         </li>
-        <li class="composition-list-item">
+        <li class="list-block__item item-mix">
+          <div class="item-mix__second"></div>
           <p>Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
         </li>
-        <li class="composition-list-item">
+        <li class="list-block__item item-mix">
+          <div class="item-mix__third"></div>
           <p>Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
         </li>
-        <li class="composition-list-item">
+        <li class="list-block__item item-mix">
+          <div class="item-mix__fourth"></div>
           <p>Уже через месяц наслаждайтесь
             изменениями к лучшему
             вашего питомца!</p>
@@ -96,7 +123,7 @@
     <section class="example">
       <h2 class="text-h2">Живой пример</h2>
       <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__item options">
+      <div class="example__item">
         <div class="options__item">
           <span class="options__item--parameter">5 кг</span>
           <span class="options__item--result">снижение веса</span>
@@ -124,12 +151,12 @@
   </main>
 
   <footer class="footer">
-    <address class="footer__info">
-      <span class="footer__info--heading">Приглашаем
+    <address class="footer__info info">
+      <span class="info__heading">Приглашаем
         к сотрудничеству
         дилеров!</span>
-      <span class="footer__info--text">ул. Большая<br>Конюшенная, д. 19/8</span>
-      <span class="footer__info--text">Санкт-Петербург</span>
+      <span class="info__text">ул. Большая<br>Конюшенная, д. 19/8</span>
+      <span class="info__text">Санкт-Петербург</span>
     </address>
 
     <a class="footer__map" href="#">
@@ -137,18 +164,32 @@
     </a>
 
     <a class="footer__cat-energy" href="#">
-      <img alt="Cat Energy">
+      <img src="images/common/cat-energy.svg" width="128" height="24" alt="Кнопка">
     </a>
 
     <address class="footer__social">
-      <a class="button" href="#">Vkontakte</a>
-      <a class="button" href="#">Youtube</a>
-      <a class="button" href="#">Telegram</a>
+      <ul class="list-block">
+        <li class="list-block__item item-social">
+          <a class="item-social__vkontakte" href="#" aria-label="Vkontakte">
+            <img src="images/common/vkontakte.svg" width="27" height="17" alt="Кнопка">
+          </a>
+        </li>
+        <li class="list-block__item item-social">
+          <a class="item-social__youtube" href="#" aria-label="Youtube">
+            <img src="images/common/youtube.svg" width="24" height="19" alt="Кнопка">
+          </a>
+        </li>
+        <li class="list-block__item item-social">
+          <a class="item-social__telegram" href="#" aria-label="Telegram">
+            <img src="images/common/telegram.svg" width="20" height="18" alt="Кнопка">
+          </a>
+        </li>
+      </ul>
     </address>
 
-    <a class="button-clean footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="footer__htmlacademy--text">HTML Academy</span>
-      <img>
+    <a class="button-base footer__htmlacademy htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="htmlacademy__text">HTML Academy</span>
+      <img src="images/common/academy.svg" width="27" height="32" alt="Логотип">
     </a>
   </footer>
 </body>
