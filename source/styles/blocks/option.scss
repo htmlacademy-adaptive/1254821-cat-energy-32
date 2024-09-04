@@ -1,0 +1,12 @@
+
+.option__parameter {
+  @include txt-Oswald(24px, 24px);
+  text-transform: uppercase;
+  color: $black;
+}
+
+.option__result {
+  @include txt-Lato(12px, 12px);
+  text-align: center;
+  color: $grey-dark;
+}

@@ -1,23 +1,121 @@
-.program__loss--icon::before {
-  @include element(50px, 50px);
-  top: 50px;
-  border-radius: 50px;
-  background-color: $green-basic;
+.program {
+  position: relative;
+  padding: 20px;
+  background-color: $grey-basic;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 100%;
+  }
 }
 
-.program__loss--icon::after {
+.program__heading {
+  @include txt-Oswald(24px, 37px);
+  color: $black;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 264px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    padding-right: 0;
+  }
+}
+
+.program__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 264px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.program__icon::before {
+  @include element(50px, 50px);
+  border-radius: 50px;
+  background-color: $green-basic;
+  position: absolute;
+  top: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    top: 92px;
+    right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    top: 47px;
+    right: auto;
+  }
+}
+
+.program__icon--loss::after {
   @include element(36px, 50px);
   background-image: url("../../icons/stack.svg#cat-loss");
+  position: absolute;
+  left: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 80px;
+    left: auto;
+    right: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
+  }
 }
 
-.program__gain--icon::before {
-  @include element(50px, 50px);
-  top: 39px;
-  border-radius: 50px;
-  background-color: $green-basic;
-}
-
-.program__gain--icon::after {
+.program__icon--gain::after {
   @include element(67px, 28px);
   background-image: url("../../icons/stack.svg#cat-gain");
+  position: absolute;
+  top: 35px;
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 136px;
+    left: auto;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
+  }
+}
+
+.program__button::before {
+  @include element(24px, 12px);
+  @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
 }

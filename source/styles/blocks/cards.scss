@@ -1,0 +1,31 @@
+.cards__heading {
+  @include txt-Oswald(36px, 36px);
+  color: $black;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    padding-top: 40px;
+    padding-bottom: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.cards__block {
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 73px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px 60px;
+  }
+}

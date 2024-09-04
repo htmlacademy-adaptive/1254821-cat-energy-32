@@ -1,0 +1,8 @@
+.menu-icon__block {
+  @include flex-block (row, space-between, center);
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+}

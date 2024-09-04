@@ -1,0 +1,31 @@
+.link {
+  @include flex-block (column, flex-start, center);
+  padding: 40px 20px;
+  gap: 40px;
+  background-color: $grey-basic;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 146px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 170px;
+    padding: 0 110px;
+  }
+}
+
+.link__htmlacademy {
+  @include flex-block (row, space-between, center);
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}

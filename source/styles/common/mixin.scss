@@ -38,3 +38,38 @@
   height: $height;
   margin: 0;
 }
+
+@mixin number ($number) {
+  content: $number;
+  position: absolute;
+  @include txt-Oswald (280px, 280px);
+  color: $grey-basic;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+
+@mixin image ($url, $size, $color: $green-basic) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $size;
+  background-color: $color;
+}
+
+@mixin mask-image ($url, $size, $color: $black) {
+  mask-image: $url;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: $size;
+  background-color: $color;
+}
+
+@mixin flex-block ($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

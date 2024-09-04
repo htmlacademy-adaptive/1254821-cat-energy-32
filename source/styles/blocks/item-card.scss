@@ -1,3 +1,43 @@
-.item-card {
-  @include txt-Lato(12px, 16px);
+.item-card__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }
+
+.item-card__plus::before {
+  @include element(30px, 30px);
+  @include mask-image(url("../../icons/stack.svg#plus"), 30px 30px, #d3d3d3);
+}
+
+.item-card__text1 {
+  @include txt-Oswald(16px, 20px);
+  color: $grey-dark-3;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.item-card__text2 {
+  @include txt-Lato(12px, 16px);
+  color: $grey-dark;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Lato(16px, 18px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+

@@ -1,9 +1,8 @@
-.additional__action {
-  @include txt-Lato(16px, 20px);
-  color: $white;
+.additional__icon {
+  background-color: $green-basic;
 }
 
-.additional__icon::after {
-  @include element(78px, 81px);
-  background-image: url("../../icons/stack.svg#present");
+.additional__heading {
+  @include txt-Oswald(24px, 24px);
+  color: $black;
 }

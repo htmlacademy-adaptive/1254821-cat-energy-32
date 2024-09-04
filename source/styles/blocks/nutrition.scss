@@ -1,4 +1,96 @@
+.nutrition {
+  @include flex-block (column, flex-start, center);
+  position: relative;
+  min-height: 480px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    min-height: 850px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    min-height: 694px;
+  }
+}
+
+.nutrition::before {
+  @include element(320px, 302px);
+  position: absolute;
+  background-color: $green-second;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 694px;
+    right: 0;
+    top: -140px;
+    background-color: $green-second;
+  }
+}
+
+.nutrition__heading {
+  @include txt-Oswald(36px, 36px);
+  color: $white;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
 .nutrition__accent {
   @include txt-Oswald(14px, 14px);
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.nutrition__button {
+  position: absolute;
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.nutrition img {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    right: 30px;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 330px;
+    bottom: 52px;
+  }
 }

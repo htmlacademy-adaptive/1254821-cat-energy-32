@@ -1,0 +1,33 @@
+.composition {
+  padding-bottom: 52px;
+}
+
+.composition__heading {
+  @include txt-Oswald(36px, 36px);
+  color: $black;
+  margin: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.composition__block {
+  @include flex-block (column, flex-start, flex-start);
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 38px 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: 80px;
+  }
+}

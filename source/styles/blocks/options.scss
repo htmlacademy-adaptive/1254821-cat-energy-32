@@ -1,14 +1,63 @@
-.options__item--parameter {
-  @include txt-Oswald(24px, 24px);
-  color: $black;
+.options {
+  @include flex-block (row, flex-start, flex-start);
+  gap: 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 55px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
-.options__item--result {
-  @include txt-Lato(12px, 12px);
-  color: $grey-dark;
+.options__item {
+  @include flex-block (column, flex-start, center);
+  width: 124px;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    gap: 11px;
+
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .options__special {
   @include txt-Oswald(14px, 20px);
   color: $black;
+  width: 280px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.options__item br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.options__special br {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+    width: 60px;
+  }
 }

@@ -1,0 +1,9 @@
+.present__action {
+  @include txt-Lato(16px, 20px);
+  color: $white;
+}
+
+.present__icon::after {
+  @include element(78px, 81px);
+  background-image: url("../../icons/stack.svg#present");
+}

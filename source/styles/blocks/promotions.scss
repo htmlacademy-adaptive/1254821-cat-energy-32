@@ -1,3 +1,8 @@
+.promotions__heading {
+  @include txt-Oswald(24px, 24px);
+  color: $black;
+}
+
 .promotions__text {
   @include txt-Oswald(16px, 24px);
   @include color ($black, $white);

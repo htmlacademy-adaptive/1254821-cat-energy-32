@@ -1,0 +1,8 @@
+.item-icon__button::before {
+  @include element(24px, 24px);
+  @include mask-image(url("../../icons/stack.svg#burger-open"), 24px 24px);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
