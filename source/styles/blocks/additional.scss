@@ -1,3 +1,22 @@
+.additional {
+  position: relative;
+}
+
+.additional::before {
+  @include element(stretch, 2px);
+  background-color: $green-basic;
+  position: absolute;
+  overflow-x: hidden;
+  left: 250px;
+  top: 40px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 90px;
+    left: 0;
+  }
+}
+
 .additional__heading {
   @include txt-Oswald(24px, 24px);
   @include color ($black, $white);
@@ -19,24 +38,6 @@
     @include txt-Oswald(40px, 40px);
     margin-left: -40px;
     padding: 70px 40px 80px;
-  }
-}
-
-.additional__heading::before {
-  @include element($tablet-width, 2px);
-  background-color: $green-basic;
-  position: absolute;
-  left: -100%;
-  top: 40px;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    width: $desktop-width;
-    top: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 4000px;
   }
 }
 

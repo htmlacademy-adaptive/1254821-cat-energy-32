@@ -13,10 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 190px;
-    width: auto;
+    width: $desktop-width;
     min-height: 570px;
-    margin: 0;
   }
 }
 
@@ -40,12 +38,14 @@
     background-color: transparent;
     background-image: none;
   }
+}
 
+body:has(.nutrition)::before {
   @media (min-width: $desktop-width) {
-    width: 1041px;
-    height: 694px;
-    left: 50%;
-    top: -150px;
+    @include element (50vw, 694px);
+    position: absolute;
+    right: 0;
+    top: 0;
     background-color: $green-second;
     background-image: url("../../images/index/bg-desktop@1x.jpg");
 
@@ -107,7 +107,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: calc(50% - 162px);
+    transform: translateX(calc(50% + 263px));
     top: 0;
     z-index: 10;
   }

@@ -1,3 +1,26 @@
+.promotions {
+  position: relative;
+}
+
+.promotions::before {
+  @include element(stretch, 2px);
+  background-color: $green-basic;
+  position: absolute;
+  overflow-x: hidden;
+  left: 250px;
+  top: 55px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 96px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 118px;
+  }
+}
+
 .promotions__heading {
   @include txt-Oswald(24px, 24px);
   @include color ($black, $white);
@@ -19,25 +42,6 @@
     @include txt-Oswald(40px, 40px);
     margin-left: -40px;
     padding: 96px 40px 72px;
-  }
-}
-
-.promotions__heading::before {
-  @include element($tablet-width, 2px);
-  background-color: $green-basic;
-  position: absolute;
-  left: -100%;
-  top: 55px;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    width: $desktop-width;
-    top: 96px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 4000px;
-    top: 112px;
   }
 }
 

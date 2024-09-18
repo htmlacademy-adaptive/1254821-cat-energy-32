@@ -39,6 +39,10 @@
     width: 142px;
     top: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-basic;
+  }
 }
 
 .option__result br {

@@ -1,15 +1,18 @@
 .header {
   position: relative;
-  margin: 0;
+  width: $mobile-width;
   min-height: 65px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include flex-block (row, space-between, center);
     min-height: 100px;
+    width: $tablet-width;
     padding: 25px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     padding: 54px 110px 30px;
   }
 }
