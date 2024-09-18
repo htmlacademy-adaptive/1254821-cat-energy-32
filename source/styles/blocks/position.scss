@@ -1,37 +1,83 @@
 .position {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-top: 1px solid $grey-special;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 270px 270px 92px;
     grid-template-rows: repeat(2, auto);
+    padding: 27px 38px;
+    border: 1px solid $grey-special;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
+    grid-template-columns: 286px 160px 84px 244px;
+    grid-template-rows: auto;
+    gap: 40px;
+    padding: 15px 0;
+    border: none;
+    border-top: 1px solid $grey-special;
   }
 }
 
+.position--last {
+  border-bottom: 1px solid $grey-special;
+}
+
 .position__name {
-  @include txt-Oswald(26px, 26px);
+  @include txt-Oswald(16px, 16px);
   @include color ($grey-dark-2, $white);
+  text-transform: uppercase;
   grid-column: 1 / 3;
-  grid-row: 1 / 2;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 20px);
     grid-column: 1 / 2;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 0;
   }
 }
 
 .position__info {
   @include txt-Lato(14px, 14px);
+
+  @media (min-width: $tablet-width) {
+    @include txt-Lato(16px, 20px);
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.position__info--price {
+  text-align: right;
+}
+
+.position__button {
+  width: 280px;
+  grid-column: 1 / -1;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    grid-column: -2 / -1;
+    margin: 0;
+  }
 }

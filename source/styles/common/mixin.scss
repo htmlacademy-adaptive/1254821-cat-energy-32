@@ -40,9 +40,9 @@
 }
 
 @mixin number ($number) {
+  @include txt-Oswald (280px, 280px);
   content: $number;
   position: absolute;
-  @include txt-Oswald (280px, 280px);
   color: $grey-basic;
   top: 0;
   right: 0;
@@ -68,8 +68,7 @@
 
 @mixin flex-block ($direction, $justify-content, $align-items) {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: $direction;
+  flex-flow: $direction wrap;
   justify-content: $justify-content;
   align-items: $align-items;
 }

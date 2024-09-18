@@ -1,19 +1,17 @@
 .composition {
+  @include flex-block (column, flex-start, flex-start);
   padding-bottom: 52px;
 }
 
 .composition__heading {
-  @include txt-Oswald(36px, 36px);
+  @include txt-Oswald(36px, 40px);
   color: $black;
   margin: 0;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(60px, 60px);
     padding-bottom: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -29,5 +27,29 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     gap: 80px;
+  }
+}
+
+.composition__block li:nth-child(1)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("1");
+  }
+}
+
+.composition__block li:nth-child(2)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("2");
+  }
+}
+
+.composition__block li:nth-child(3)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("3");
+  }
+}
+
+.composition__block li:nth-child(4)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("4");
   }
 }

@@ -1,12 +1,27 @@
+.social {
+  position: relative;
+}
+
 .social__block {
   @include flex-block (row, center, center);
   gap: 24px;
+}
+
+.social__block::before,
+.social__block::after {
+  @include element(240px, 1px);
+  background-color: #d9d9d9;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
-
+    background-color: transparent;
   }
+}
 
-  @media (min-width: $desktop-width) {
+.social__block::before {
+  top: 31px;
+}
 
-  }
+.social__block::after {
+  bottom: 31px;
 }

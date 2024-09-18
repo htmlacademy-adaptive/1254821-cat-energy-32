@@ -5,27 +5,43 @@
   background-color: $grey-basic;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 146px;
-    padding: 0 30px;
+    @include flex-block (row, space-between, center);
+    padding: 55px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 170px;
-    padding: 0 110px;
+    padding: 66px 110px;
   }
 }
+
+.link__cat-energy {
+  color: $grey-dark-3;
+
+  &:hover {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}
+
 
 .link__htmlacademy {
   @include flex-block (row, space-between, center);
   width: 280px;
+  color: #666666;
+
+  &:hover {
+    color: $green-basic;
+  }
+
+  &:active {
+    color: $green-basic;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 168px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }

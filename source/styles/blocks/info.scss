@@ -1,9 +1,49 @@
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    margin: 0;
+    padding: 60px 80px;
+    background-color: $white;
+  }
+}
+
 .info__heading {
   @include txt-Oswald(16px, 20px);
-  @include color (#111111, $white);
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 26px);
+  }
 }
 
 .info__text {
+  @include flex-block (column, flex-start, flex-start);
+
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+  }
+}
+
+.info__text span {
   @include txt-Lato(14px, 20px);
-  @include color ($grey-dark, $white);
+  color: $grey-dark;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Lato(16px, 20px);
+  }
 }

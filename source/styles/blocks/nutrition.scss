@@ -1,36 +1,57 @@
 .nutrition {
   @include flex-block (column, flex-start, center);
   position: relative;
+  width: $mobile-width;
   min-height: 480px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
+    width: $tablet-width;
     min-height: 850px;
     padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
-    min-height: 694px;
+    width: auto;
+    min-height: 570px;
+    margin: 0;
   }
 }
 
 .nutrition::before {
   @include element(320px, 302px);
   position: absolute;
-  background-color: $green-second;
   z-index: -1;
 
+  @media (min-width: $mobile-width) {
+    background-color: $green-second;
+    background-image: url("../../images/index/bg-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index/bg-mobile@2x.jpg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: transparent;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 720px;
+    width: 1041px;
     height: 694px;
-    right: 0;
-    top: -140px;
+    left: 50%;
+    top: -150px;
     background-color: $green-second;
+    background-image: url("../../images/index/bg-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index/bg-desktop@2x.jpg");
+    }
   }
 }
 
@@ -42,55 +63,52 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(60px, 60px);
     color: $black;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
 .nutrition__accent {
   @include txt-Oswald(14px, 14px);
   color: $white;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 20px);
     color: $black;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
 .nutrition__button {
   position: absolute;
+  width: 280px;
   bottom: 0;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 26px);
+    @include button (14px);
     position: static;
+    min-width: 242px;
     margin-top: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
-.nutrition img {
+.nutrition__picture {
   position: absolute;
-  right: 20px;
+  left: 20px;
   bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    right: 30px;
-    bottom: 0;
+    left: 30px;
+    top: 240px;
+    z-index: -10;
   }
 
   @media (min-width: $desktop-width) {
-    right: 330px;
-    bottom: 52px;
+    left: calc(50% - 162px);
+    top: 0;
+    z-index: 10;
   }
 }

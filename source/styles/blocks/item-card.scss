@@ -1,8 +1,48 @@
+.item-card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $grey-second;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &:not(:last-child)::before {
+    @media (min-width: $tablet-width) {
+      @include element(324px, 430px);
+      background-color: $grey-basic;
+      position: absolute;
+      margin: 80px auto 0;
+      z-index: -2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+    }
+  }
+
+  &:last-child::before {
+    @media (min-width: $tablet-width) {
+      @include element(324px, 430px);
+      border: 2px solid $grey-basic;
+      position: absolute;
+      margin: 80px auto 0;
+      z-index: -2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+    }
+  }
+}
+
 .item-card__button {
   width: 280px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    margin: 32px auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,32 +52,56 @@
 
 .item-card__plus::before {
   @include element(30px, 30px);
-  @include mask-image(url("../../icons/stack.svg#plus"), 30px 30px, #d3d3d3);
+  @include mask-image(url("../../icons/stack.svg#plus"), auto auto, #d3d3d3);
+  margin: 0 auto 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 130px auto 50px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .item-card__text1 {
   @include txt-Oswald(16px, 20px);
   color: $grey-dark-3;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(20px, 24px);
+    width: 140px;
+    margin: 0 auto;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-bottom: 26px;
   }
 }
 
 .item-card__text2 {
   @include txt-Lato(12px, 16px);
   color: $grey-dark;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     @include txt-Lato(16px, 18px);
+    width: 170px;
+    margin: 0 auto;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-bottom: 58px;
   }
 }
 

@@ -6,18 +6,13 @@
 }
 
 body {
-  width: $mobile-width;
   @include txt-Lato(14px, 18px);
   @include color ($grey-dark, $white);
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    @include txt-Lato(16px, 24px);
   }
 }
 

@@ -3,32 +3,30 @@
   @include button (0);
 }
 
-.button-nav {
-  @include txt-Oswald(20px, 20px);
-  @include button (0);
-  @include color ($black, $white);
-}
-
 .button-green {
   @include txt-Oswald(16px, 20px);
   @include button (10px);
   @include color ($white, $green-basic);
+
+  &:hover {
+    background-color: $green-second;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button-grey {
   @include txt-Oswald(16px, 20px);
   @include button (10px);
   @include color ($grey-dark, $grey-basic);
-}
 
-.button-inherit {
-  @include txt-Oswald(16px, 16px);
-  @include button (4px);
-  @include color ($black, inherit);
-  text-align: start;
-}
+  &:hover {
+    background-color: $grey-second;
+  }
 
-.button-green--form {
-  @include txt-Oswald(20px, 26px);
-  padding: 15px;
+  &:active {
+    background-color: $grey-second;
+  }
 }

@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 230px;
+    min-height: 280px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +17,13 @@
 
 .item-mix__text {
   margin: 0;
+  padding: 0;
+}
+
+.item-mix div {
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
 }
 
 .item-mix__first::before {
@@ -36,28 +44,4 @@
 .item-mix__fourth::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-4"), 27px 31px);
-}
-
-.item-mix__first::after {
-  @media (min-width: $tablet-width) {
-    @include number ("1");
-  }
-}
-
-.item-mix__second::after {
-  @media (min-width: $tablet-width) {
-    @include number ("2");
-  }
-}
-
-.item-mix__third::after {
-  @media (min-width: $tablet-width) {
-    @include number ("3");
-  }
-}
-
-.item-mix__fourth::after {
-  @media (min-width: $tablet-width) {
-    @include number ("4");
-  }
 }

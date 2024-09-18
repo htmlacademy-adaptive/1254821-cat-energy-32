@@ -1,0 +1,58 @@
+.nav__button {
+  @include txt-Oswald(20px, 20px);
+  @include button (0);
+  @include color ($black, $white);
+  position: relative;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid $grey-special-2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(18px, 24px);
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include txt-Oswald(20px, 20px);
+    background-color: transparent;
+  }
+}
+
+.nav__button--index {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.nav__button--active {
+  pointer-events: none;
+}
+
+.nav__button--active::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    background-color: $green-basic;
+  }
+}
+
+.nav__button--active.nav__button--index::before {
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
