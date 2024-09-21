@@ -1,18 +1,18 @@
 .social {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 35px;
+  padding-top: 38px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-left: 30px;
+    padding-left: 34px;
     padding-top: 8px;
   }
 }
 
 .social__block {
   @include flex-block (row, center, center);
-  gap: 28px;
+  gap: 24px;
 }
 
 .social__block::before,
@@ -27,9 +27,9 @@
 }
 
 .social__block::before {
-  top: 79px;
+  top: 16px;
 }
 
 .social__block::after {
-  bottom: 80px;
+  bottom: 20px;
 }

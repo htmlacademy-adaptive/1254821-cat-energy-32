@@ -63,26 +63,26 @@
   @media (min-width: $desktop-width) {
     width: 170px;
   }
+}
 
-  & span:nth-child(odd) {
-    text-align: left;
+.link-card__text span:nth-child(odd) {
+  text-align: left;
+}
+
+.link-card__text span:nth-child(even) {
+  text-align: right;
+}
+
+.link-card__text span:nth-child(2n)::before {
+  @media (min-width: $tablet-width) {
+    @include element(250px, 1px);
+    background-color: $grey-special;
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
   }
 
-  & span:nth-child(even) {
-    text-align: right;
-  }
-
-  & span:nth-child(2n)::before {
-    @media (min-width: $tablet-width) {
-      @include element(250px, 1px);
-      background-color: $grey-special;
-      position: absolute;
-      left: 0;
-      margin-top: 25px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 170px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 170px;
   }
 }

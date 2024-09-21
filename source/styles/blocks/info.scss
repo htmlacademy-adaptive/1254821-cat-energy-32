@@ -36,16 +36,6 @@
 
   @media (min-width: $tablet-width) {
     gap: 18px;
-
-    & span {
-      text-align: right;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    & span {
-      text-align: left;
-    }
   }
 }
 
@@ -55,5 +45,10 @@
 
   @media (min-width: $tablet-width) {
     @include txt-Lato(16px, 20px);
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }

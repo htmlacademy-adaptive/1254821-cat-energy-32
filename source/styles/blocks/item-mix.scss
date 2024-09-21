@@ -28,13 +28,13 @@
   @media (min-width: $tablet-width) {
     width: 245px;
   }
+}
 
-  & br {
-    display: none;
+.item-mix--fourth br {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
