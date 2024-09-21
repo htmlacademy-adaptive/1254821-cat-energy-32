@@ -1,6 +1,6 @@
 .item-card {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $grey-second;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
       @include element(324px, 430px);
       background-color: $grey-basic;
       position: absolute;
-      margin: 80px auto 0;
+      margin: 70px auto 0;
       z-index: -2;
     }
 
@@ -26,7 +26,7 @@
       @include element(324px, 430px);
       border: 2px solid $grey-basic;
       position: absolute;
-      margin: 80px auto 0;
+      margin: 70px auto 0;
       z-index: -2;
     }
 
@@ -38,25 +38,35 @@
 
 .item-card__button {
   width: 280px;
-  margin-top: 16px;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin: 32px auto 0;
+    margin: 38px auto 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 170px;
+    margin-top: 46px;
+  }
+}
+
+.item-card__button--more {
+  margin-top: 16px;
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
   }
 }
 
 .item-card__plus::before {
   @include element(30px, 30px);
   @include mask-image(url("../../icons/stack.svg#plus"), auto auto, #d3d3d3);
-  margin: 0 auto 22px;
+  margin: 4px auto 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 130px auto 50px;
+    margin: 120px auto 50px;
     width: 60px;
     height: 60px;
   }

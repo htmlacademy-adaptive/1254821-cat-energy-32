@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(36px, 36px);
-    padding: 25px 0 30px;
+    padding: 25px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,13 +50,13 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
     width: 340px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
-    padding-bottom: 22px;
+    padding-bottom: 30px;
     width: 466px;
   }
 }
@@ -147,6 +147,7 @@
   @media (min-width: $tablet-width) {
     @include txt-Oswald(20px, 20px);
     padding-right: 56px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,14 +155,15 @@
   }
 }
 
-.program__button::before {
+.program__button::after {
   @include element(24px, 12px);
   @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
   position: absolute;
-  top: 6px;
-  right: 8px;
+  top: 4px;
+  left: 100px;
 
   @media (min-width: $tablet-width) {
     top: 8px;
+    left: 131px;
   }
 }

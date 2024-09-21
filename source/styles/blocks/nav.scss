@@ -45,9 +45,12 @@
     z-index: 2;
     left: 0;
     right: 0;
-    bottom: -8px;
     height: 2px;
     background-color: $green-basic;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: -12px;
   }
 }
 

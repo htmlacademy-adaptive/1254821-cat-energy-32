@@ -58,6 +58,7 @@ body:has(.nutrition)::before {
 .nutrition__heading {
   @include txt-Oswald(36px, 36px);
   color: $white;
+  text-align: center;
   margin: 0;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -65,8 +66,15 @@ body:has(.nutrition)::before {
   @media (min-width: $tablet-width) {
     @include txt-Oswald(60px, 60px);
     color: $black;
+    text-align: left;
+    width: 500px;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 125px;
+    padding-left: 70px;
   }
 }
 
@@ -79,6 +87,10 @@ body:has(.nutrition)::before {
     @include txt-Oswald(20px, 20px);
     color: $black;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .nutrition__button {
@@ -90,8 +102,12 @@ body:has(.nutrition)::before {
     @include txt-Oswald(20px, 26px);
     @include button (14px);
     position: static;
-    min-width: 242px;
+    width: 242px;
     margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -107,8 +123,8 @@ body:has(.nutrition)::before {
   }
 
   @media (min-width: $desktop-width) {
-    transform: translateX(calc(50% + 263px));
-    top: 0;
+    transform: translateX(calc(50% + 252px));
+    top: 42px;
     z-index: 10;
   }
 }

@@ -14,12 +14,12 @@
   @media (min-width: $tablet-width) {
     @include txt-Oswald(60px, 60px);
     padding-top: 40px;
-    padding-bottom: 84px;
+    padding-bottom: 72px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 44px;
+    padding-top: 88px;
   }
 }
 
@@ -30,8 +30,14 @@
     gap: 60px;
   }
 
+  @media (min-width: $tablet-width) {
+    gap: 68px 60px;
+    padding-bottom: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px 62px;
+    gap: 70px 80px;
+    padding-bottom: 18px;
   }
 }

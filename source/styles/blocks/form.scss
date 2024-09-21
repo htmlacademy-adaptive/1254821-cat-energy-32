@@ -5,13 +5,11 @@
 
   @media (min-width: $tablet-width) {
     @include flex-block (row, center, flex-start);
-    padding-left: 40px;
     padding-bottom: 80px;
     gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     padding-bottom: 104px;
   }
 }

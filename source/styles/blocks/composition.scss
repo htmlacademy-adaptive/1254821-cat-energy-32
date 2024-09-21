@@ -1,6 +1,14 @@
 .composition {
   @include flex-block (column, flex-start, flex-start);
-  padding-bottom: 52px;
+  padding-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 54px;
+  }
 }
 
 .composition__heading {
@@ -34,22 +42,41 @@
   @media (min-width: $tablet-width) {
     @include number ("1");
   }
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
 }
 
 .composition__block li:nth-child(2)::after {
   @media (min-width: $tablet-width) {
     @include number ("2");
+    right: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
 .composition__block li:nth-child(3)::after {
   @media (min-width: $tablet-width) {
     @include number ("3");
+    right: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
 .composition__block li:nth-child(4)::after {
   @media (min-width: $tablet-width) {
     @include number ("4");
+    right: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -5px;
   }
 }

@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 270px 270px 92px;
     grid-template-rows: repeat(2, auto);
-    padding: 27px 38px;
+    padding: 27px 37px 28px;
     border: 1px solid $grey-special;
     border-bottom: none;
   }
@@ -18,7 +18,7 @@
     grid-template-columns: 286px 160px 84px 244px;
     grid-template-rows: auto;
     gap: 40px;
-    padding: 15px 0;
+    padding: 16px 0 15px;
     border: none;
     border-top: 1px solid $grey-special;
   }
@@ -73,6 +73,7 @@
 
   @media (min-width: $tablet-width) {
     width: 632px;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {

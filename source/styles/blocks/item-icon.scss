@@ -8,9 +8,14 @@
   }
 }
 
+.item-icon__cat-energy {
+  padding-right: 10px;
+}
+
 .item-icon__button {
   width: 24px;
   height: 24px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     display: none;
