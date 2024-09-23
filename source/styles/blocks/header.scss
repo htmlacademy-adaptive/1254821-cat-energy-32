@@ -37,13 +37,14 @@
   @media (min-width: $tablet-width) {
     position: static;
     border: none;
-    width: 436px;
+    width: 440px;
     margin: 0;
-    padding: 0;
+    padding: 0 4px 5px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 476px;
+    padding: 0;
     background-color: transparent;
   }
 }
