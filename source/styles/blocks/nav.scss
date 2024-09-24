@@ -16,6 +16,10 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
+
   @media (min-width: $tablet-width) {
     @include txt-Oswald(18px, 24px);
     padding: 0;

@@ -8,4 +8,8 @@
   &:active {
     color: rgba(104, 183, 56, 0.3);
   }
+
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
 }
