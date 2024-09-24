@@ -8,11 +8,12 @@
   }
 }
 
-.item-icon__cat-energy {
+.item-icon--cat-energy {
   padding-right: 10px;
 }
 
 .item-icon__button {
+  @include color ($white, $white);
   width: 24px;
   height: 24px;
   margin-bottom: 4px;

@@ -40,21 +40,6 @@
   }
 }
 
-body:has(.nutrition)::before {
-  @media (min-width: $desktop-width) {
-    @include element (50vw, 694px);
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: $green-second;
-    background-image: url("../../images/index/bg-desktop@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/index/bg-desktop@2x.jpg");
-    }
-  }
-}
-
 .nutrition__heading {
   @include txt-Oswald(36px, 36px);
   color: $white;
