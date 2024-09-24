@@ -1,0 +1,52 @@
+.option {
+  @include flex-block (column, flex-start, center);
+  width: 124px;
+  height: 56px;
+  border: 1px solid $grey-special;
+  border-radius: 3px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
+}
+
+.option__parameter {
+  @include txt-Oswald(24px, 24px);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 14px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(30px, 37px);
+    padding-top: 15px;
+  }
+}
+
+.option__result {
+  @include txt-Lato(12px, 12px);
+  @include color ($grey-dark, $grey-bg);
+  text-align: center;
+  position: absolute;
+  width: 80px;
+  top: 48px;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Lato(14px, 14px);
+    background-color: $white;
+    width: 142px;
+    top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-basic;
+  }
+}
+
+.option__result br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

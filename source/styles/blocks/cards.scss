@@ -1,0 +1,43 @@
+.cards {
+  position: relative;
+}
+
+.cards__heading {
+  @include txt-Oswald(36px, 36px);
+  color: $black;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 40px;
+  border-top: 1px solid $grey-second;
+  border-bottom: 1px solid $grey-second;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(60px, 60px);
+    padding-top: 40px;
+    padding-bottom: 72px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 88px;
+  }
+}
+
+.cards__block {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 68px 60px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px 80px;
+    padding-bottom: 18px;
+  }
+}

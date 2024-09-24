@@ -1,0 +1,74 @@
+/* здесь используйте глобальные mixin */
+@mixin txt-Lato ($txt-size, $txt-height) {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $txt-size;
+  line-height: $txt-height;
+}
+
+@mixin txt-Oswald ($txt-size, $txt-height) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $txt-size;
+  line-height: $txt-height;
+}
+
+@mixin color ($color, $clr-bg) {
+  color: $color;
+  background-color: $clr-bg;
+}
+
+@mixin button ($indents) {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: $indents;
+  cursor: pointer;
+}
+
+@mixin element ($width, $height) {
+  content: "";
+  display: block;
+  position: relative;
+  width: $width;
+  height: $height;
+  margin: 0;
+}
+
+@mixin number ($number) {
+  @include txt-Oswald (280px, 280px);
+  content: $number;
+  position: absolute;
+  color: $grey-basic;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+
+@mixin image ($url, $size, $color: $green-basic) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $size;
+  background-color: $color;
+}
+
+@mixin mask-image ($url, $size, $color: $black) {
+  mask-image: $url;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: $size;
+  background-color: $color;
+}
+
+@mixin flex-block ($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-flow: $direction wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

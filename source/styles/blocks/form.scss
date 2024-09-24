@@ -1,0 +1,43 @@
+.form {
+  @include flex-block (column, flex-start, flex-start);
+  gap: 16px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-block (row, center, flex-start);
+    padding-bottom: 80px;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 104px;
+  }
+}
+
+.form__input {
+  @include txt-Oswald(20px, 20px);
+  color: $grey-dark;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  width: 280px;
+  padding: 12px;
+  border: 1px solid $grey-special;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.form__button {
+  @include txt-Oswald(20px, 26px);
+  padding: 15px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}

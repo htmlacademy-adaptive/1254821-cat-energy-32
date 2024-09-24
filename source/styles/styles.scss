@@ -1,7 +1,40 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/variables.scss";
+@import "./common/mixin.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+@import "./common/button.scss";
 
 /* BLOCKS */
+@import "./blocks/main-block.scss";
+@import "./blocks/list-block.scss";
 @import "./blocks/header.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/menu-icon.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/info.scss";
+@import "./blocks/htmlacademy.scss";
+@import "./blocks/nutrition.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/program.scss";
+@import "./blocks/composition.scss";
+@import "./blocks/example.scss";
+@import "./blocks/options.scss";
+@import "./blocks/option.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/position.scss";
+@import "./blocks/promotions.scss";
+@import "./blocks/link.scss";
+@import "./blocks/social.scss";
+@import "./blocks/item-icon.scss";
+@import "./blocks/item-mix.scss";
+@import "./blocks/item-card.scss";
+@import "./blocks/item-social.scss";
+@import "./blocks/cards.scss";
+@import "./blocks/link-card.scss";
+@import "./blocks/present.scss";
+@import "./blocks/form.scss";
+@import "./blocks/special.scss";
+@import "./blocks/bg-cat.scss";

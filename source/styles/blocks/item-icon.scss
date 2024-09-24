@@ -1,0 +1,34 @@
+.item-icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.item-icon--cat-energy {
+  padding-right: 10px;
+}
+
+.item-icon__button {
+  @include color ($white, $white);
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.item-icon__button--close::before {
+  @include element(24px, 24px);
+  @include mask-image(url("../../icons/stack.svg#burger-open"), 24px 24px);
+}
+
+.item-icon__button--open::before {
+  @include element(20px, 20px);
+  @include mask-image(url("../../icons/stack.svg#burger-close"), 20px 20px);
+}

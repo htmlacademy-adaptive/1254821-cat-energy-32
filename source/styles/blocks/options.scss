@@ -1,0 +1,48 @@
+.options {
+  @include flex-block (row, flex-start, flex-start);
+  gap: 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 55px 42px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding-bottom: 70px;
+  }
+}
+
+.options__special {
+  @include txt-Oswald(14px, 20px);
+  color: $black;
+  width: 280px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-block (column, flex-start, flex-end);
+    @include txt-Oswald(20px, 29px);
+    text-align: end;
+    padding-top: 8px;
+    margin-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex-block (row, flex-start, flex-start);
+    text-align: start;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    gap: 63px;
+    width: 436px;
+  }
+}
+
+.options__item br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

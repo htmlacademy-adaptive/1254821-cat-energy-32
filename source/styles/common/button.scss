@@ -1,0 +1,32 @@
+/* здесь настраиваються все кнопки */
+.button-base {
+  @include button (0);
+}
+
+.button-green {
+  @include txt-Oswald(16px, 20px);
+  @include button (10px);
+  @include color ($white, $green-basic);
+
+  &:hover {
+    background-color: $green-second;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-grey {
+  @include txt-Oswald(16px, 20px);
+  @include button (10px);
+  @include color ($grey-dark, $grey-basic);
+
+  &:hover {
+    background-color: $grey-second;
+  }
+
+  &:active {
+    background-color: $grey-second;
+  }
+}

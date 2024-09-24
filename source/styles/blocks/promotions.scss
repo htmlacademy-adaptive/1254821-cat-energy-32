@@ -1,0 +1,64 @@
+.promotions {
+  position: relative;
+}
+
+.promotions::before {
+  @include element(stretch, 2px);
+  background-color: $green-basic;
+  position: absolute;
+  overflow-x: hidden;
+  left: 250px;
+  top: 50px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 96px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 116px;
+  }
+}
+
+.promotions__heading {
+  @include txt-Oswald(24px, 24px);
+  @include color ($black, $white);
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin: 0;
+  padding: 40px 40px 16px 0;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(32px, 32px);
+    min-width: 300px;
+    text-align: left;
+    margin-right: auto;
+    padding: 80px 40px 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include txt-Oswald(40px, 40px);
+    margin-left: -40px;
+    padding: 98px 40px 72px;
+  }
+}
+
+.promotions__text {
+  @include txt-Oswald(16px, 24px);
+  @include color ($black, $white);
+  text-align: center;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(24px, 32px);
+    margin: 0 auto;
+    padding-bottom: 22px;
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
+}

@@ -1,0 +1,115 @@
+.nutrition {
+  @include flex-block (column, flex-start, center);
+  position: relative;
+  width: $mobile-width;
+  min-height: 480px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    width: $tablet-width;
+    min-height: 850px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    min-height: 570px;
+  }
+}
+
+.nutrition::before {
+  @include element(320px, 302px);
+  position: absolute;
+  z-index: -1;
+
+  @media (min-width: $mobile-width) {
+    background-color: $green-second;
+    background-image: url("../../images/index/bg-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index/bg-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+.nutrition__heading {
+  @include txt-Oswald(36px, 36px);
+  color: $white;
+  text-align: center;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(60px, 60px);
+    color: $black;
+    text-align: left;
+    width: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 125px;
+    padding-left: 70px;
+  }
+}
+
+.nutrition__accent {
+  @include txt-Oswald(14px, 14px);
+  color: $white;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 20px);
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
+}
+
+.nutrition__button {
+  position: absolute;
+  width: 280px;
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 26px);
+    @include button (14px);
+    position: static;
+    width: 242px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
+.nutrition__picture {
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+    top: 240px;
+    z-index: -10;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(calc(50% + 252px));
+    top: 42px;
+    z-index: 10;
+  }
+}

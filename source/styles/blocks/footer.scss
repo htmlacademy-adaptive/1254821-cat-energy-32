@@ -1,0 +1,23 @@
+.footer {
+  margin: 0;
+  background-color: $grey-basic;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.footer__map--index {
+  background-color: $white;
+}
+
+.footer iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}

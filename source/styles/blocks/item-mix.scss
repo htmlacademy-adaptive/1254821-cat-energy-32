@@ -1,0 +1,85 @@
+.item-mix {
+  @include flex-block (row, flex-start, flex-start);
+  gap: 20px;
+  flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    position: relative;
+    width: 230px;
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.item-mix__text {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+}
+
+.item-mix--fourth {
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
+}
+
+.item-mix--fourth br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.item-mix div {
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+}
+
+.item-mix__first::before {
+  @include element(60px, 60px);
+  @include image(url("../../icons/stack.svg#item-1"), 25px 28px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.item-mix__second::before {
+  @include element(60px, 60px);
+  @include image(url("../../icons/stack.svg#item-2"), 27px 29px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.item-mix__third::before {
+  @include element(60px, 60px);
+  @include image(url("../../icons/stack.svg#item-3"), 26px 30px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.item-mix__fourth::before {
+  @include element(60px, 60px);
+  @include image(url("../../icons/stack.svg#item-4"), 27px 31px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}

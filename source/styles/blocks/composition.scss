@@ -1,0 +1,82 @@
+.composition {
+  @include flex-block (column, flex-start, flex-start);
+  padding-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 54px;
+  }
+}
+
+.composition__heading {
+  @include txt-Oswald(36px, 40px);
+  color: $black;
+  margin: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(60px, 60px);
+    padding-bottom: 32px;
+  }
+}
+
+.composition__block {
+  @include flex-block (column, flex-start, flex-start);
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 38px 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+.composition__block li:nth-child(1)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("1");
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
+}
+
+.composition__block li:nth-child(2)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("2");
+    right: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.composition__block li:nth-child(3)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("3");
+    right: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.composition__block li:nth-child(4)::after {
+  @media (min-width: $tablet-width) {
+    @include number ("4");
+    right: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -5px;
+  }
+}

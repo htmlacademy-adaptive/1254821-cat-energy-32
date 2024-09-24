@@ -1,0 +1,5 @@
+.htmlacademy__text {
+  @include txt-Lato(16px, 20px);
+  color: $grey-dark;
+  text-transform: none;
+}

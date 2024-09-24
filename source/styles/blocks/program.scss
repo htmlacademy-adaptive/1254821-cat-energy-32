@@ -1,0 +1,169 @@
+.program {
+  position: relative;
+  padding: 20px;
+  background-color: $grey-basic;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 100%;
+  }
+}
+
+.program::before {
+  @include element(240px, 1px);
+  background-color: #d9d9d9;
+  position: absolute;
+  bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    bottom: 0;
+  }
+}
+
+.program__heading {
+  @include txt-Oswald(24px, 37px);
+  color: $black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0 30px 70px;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(36px, 36px);
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    padding-bottom: 72px;
+  }
+}
+
+.program__text {
+  margin: 0;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    padding-bottom: 52px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-bottom: 30px;
+    width: 466px;
+  }
+}
+
+.program__icon::before {
+  @include element(50px, 50px);
+  border-radius: 50px;
+  background-color: $green-basic;
+  position: absolute;
+  top: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    top: 92px;
+    right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    top: 47px;
+    right: auto;
+  }
+}
+
+.program__icon--loss::after {
+  @include element(36px, 50px);
+  background-image: url("../../icons/stack.svg#cat-loss");
+  position: absolute;
+  left: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 80px;
+    left: auto;
+    right: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
+  }
+}
+
+.program__icon--gain::after {
+  @include element(67px, 28px);
+  background-image: url("../../icons/stack.svg#cat-gain");
+  position: absolute;
+  top: 35px;
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 136px;
+    left: auto;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
+  }
+}
+
+.program__button {
+  @include txt-Oswald(16px, 16px);
+  @include button (4px);
+  @include color ($black, inherit);
+  position: relative;
+  text-align: start;
+  padding: 4px 48px 4px 0;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 20px);
+    padding-right: 56px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+  }
+}
+
+.program__button::after {
+  @include element(24px, 12px);
+  @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
+  position: absolute;
+  top: 4px;
+  left: 100px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 131px;
+  }
+}

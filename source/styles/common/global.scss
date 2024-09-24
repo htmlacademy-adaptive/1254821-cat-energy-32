@@ -1,1 +1,23 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @include txt-Lato(14px, 18px);
+  @include color ($grey-dark, $white);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include txt-Lato(16px, 24px);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

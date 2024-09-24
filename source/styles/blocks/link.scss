@@ -1,0 +1,55 @@
+.link {
+  @include flex-block (column, flex-start, center);
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: $grey-basic;
+
+  @media (min-width: $tablet-width) {
+    @include flex-block (row, space-between, center);
+    width: $tablet-width;
+    padding: 0 30px;
+    height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 66px 110px;
+  }
+}
+
+.link__cat-energy {
+  color: $grey-dark-3;
+
+  &:hover {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+  }
+}
+
+
+.link__htmlacademy {
+  @include flex-block (row, space-between, center);
+  width: 280px;
+  color: #666666;
+
+  &:hover {
+    color: $green-basic;
+  }
+
+  &:active {
+    color: $green-basic;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
