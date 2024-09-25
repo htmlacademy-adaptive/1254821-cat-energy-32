@@ -26,3 +26,9 @@
     }
   }
 }
+
+.bg-cat--not-js.bg-cat::before {
+  @media (max-width: calc($tablet-width - 1px)) {
+    top: 267px;
+  }
+}

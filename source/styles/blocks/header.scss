@@ -1,14 +1,15 @@
 .header {
   position: relative;
   width: $mobile-width;
-  height: 65px;
+  min-height: 100%;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include flex-block (row, space-between, center);
+    height: 65px;
     min-height: 100px;
     width: $tablet-width;
-    padding: 25px 30px;
+    padding: 25px 30px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +30,8 @@
 .header__navigation {
   position: absolute;
   width: 100%;
-  padding-top: 10px;
+  margin: 0;
+  padding: 0;
   z-index: 10;
   background-color: $white;
   border-bottom: 1px solid $grey-special-2;
@@ -38,7 +40,6 @@
     position: static;
     border: none;
     width: 440px;
-    margin: 0;
     padding: 0 4px 5px 0;
   }
 

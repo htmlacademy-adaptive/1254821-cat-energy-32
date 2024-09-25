@@ -140,35 +140,39 @@
   text-align: start;
   padding: 4px 48px 4px 0;
 
-  &::after {
-    @include element(24px, 12px);
-    @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
-    position: absolute;
-    top: 4px;
-    left: 100px;
-  }
-
   &:active {
     opacity: 0.3;
+  }
 
-    &::after {
-      @include mask-image(url("../../icons/stack.svg#arrow-2"), 32px 12px);
-      width: 32px;
-    }
+  &:focus {
+    outline: 2px solid $grey-dark;
   }
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(20px, 20px);
     padding-right: 56px;
     padding-bottom: 10px;
-
-    &::after {
-      top: 8px;
-      left: 131px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 60px;
   }
+}
+
+.program__button::after {
+  @include element(24px, 12px);
+  @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
+  position: absolute;
+  top: 4px;
+  left: 100px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 131px;
+  }
+}
+
+.program__button:hover::after {
+  @include mask-image(url("../../icons/stack.svg#arrow-2"), 32px 12px);
+  width: 32px;
 }
