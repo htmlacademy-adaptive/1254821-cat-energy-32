@@ -1,10 +1,8 @@
 const navMain = document.querySelector('.menu');
 const navToggle = document.querySelector('.item-icon__button');
-//const navBody = document.querySelector('.bg-cat');
 
-//navToggle.classList.remove('item-icon__button--not-js');
-//navMain.classList.remove('menu--not-js');
-//navBody.classList.remove('bg-cat--not-js');
+navToggle.classList.remove('item-icon__button--not-js');
+navMain.classList.remove('menu--not-js');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('menu--close')) {
@@ -19,3 +17,6 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.remove('item-icon__button--open');
   }
 });
+
+const navBody = document.querySelector('.bg-cat');
+navBody.classList.remove('bg-cat--not-js');
