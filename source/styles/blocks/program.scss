@@ -144,6 +144,10 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
+
   @media (min-width: $tablet-width) {
     @include txt-Oswald(20px, 20px);
     padding-right: 56px;
@@ -166,4 +170,9 @@
     top: 8px;
     left: 131px;
   }
+}
+
+.program__button:hover::after {
+  @include mask-image(url("../../icons/stack.svg#arrow-2"), 32px 12px);
+  width: 32px;
 }

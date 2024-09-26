@@ -1,13 +1,34 @@
 .bg-cat::before {
+  @include element(100%, 302px);
+  @include image (url("../../images/index/bg-mobile@1x.jpg"), cover, $green-second);
+  position: absolute;
+  z-index: -1;
+  top: 65px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/index/bg-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    background-image: none;
+  }
+
   @media (min-width: $desktop-width) {
-    @include element (50vw, 694px);
-    @include image (url("../../images/index/bg-desktop@1x.jpg"), auto 694px, $green-second);
+    @include element (72%, 694px);
+    @include image (url("../../images/index/bg-desktop@1x.jpg"), cover, $green-second);
     position: absolute;
-    right: 0;
+    left: 50%;
     top: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/index/bg-desktop@2x.jpg");
     }
+  }
+}
+
+.bg-cat--not-js.bg-cat::before {
+  @media (max-width: calc($tablet-width - 1px)) {
+    top: 267px;
   }
 }

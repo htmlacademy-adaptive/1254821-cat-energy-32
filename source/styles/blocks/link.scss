@@ -29,6 +29,10 @@
     color: #6b6b6b;
   }
 
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 6px;
   }
@@ -47,6 +51,10 @@
   &:active {
     color: $green-basic;
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $grey-dark;
   }
 
   @media (min-width: $tablet-width) {

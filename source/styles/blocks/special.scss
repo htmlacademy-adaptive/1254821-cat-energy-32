@@ -3,30 +3,34 @@
 }
 
 .special::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: $grey-bg;
+
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 100%;
     height: 462px;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-color: $grey-bg;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $grey-basic;
+    height: 100%;
+    top: 136px;
   }
 }
 
 .special__container {
   width: $mobile-width;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 20px 35px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 0 30px;
+    padding: 45px 30px 95px;
   }
 
   @media (min-width: $desktop-width) {

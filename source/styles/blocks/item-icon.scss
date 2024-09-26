@@ -6,6 +6,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
 }
 
 .item-icon--cat-energy {
@@ -31,4 +35,8 @@
 .item-icon__button--open::before {
   @include element(20px, 20px);
   @include mask-image(url("../../icons/stack.svg#burger-close"), 20px 20px);
+}
+
+.item-icon__button--not-js {
+  display: none;
 }

@@ -1,6 +1,10 @@
 /* здесь настраиваються все кнопки */
 .button-base {
   @include button (0);
+
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
 }
 
 .button-green {
@@ -15,6 +19,10 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &:focus {
+    outline: 2px solid $grey-dark;
+  }
 }
 
 .button-grey {
@@ -28,5 +36,9 @@
 
   &:active {
     background-color: $grey-second;
+  }
+
+  &:focus {
+    outline: 2px solid $grey-dark;
   }
 }

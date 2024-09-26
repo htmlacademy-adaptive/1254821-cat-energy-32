@@ -16,3 +16,10 @@
 .menu--open {
   display: block;
 }
+
+.menu--not-js {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: block;
+    position: static;
+  }
+}

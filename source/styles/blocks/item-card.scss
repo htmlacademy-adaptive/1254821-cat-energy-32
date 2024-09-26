@@ -1,4 +1,5 @@
 .item-card {
+  position: relative;
   padding-top: 22px;
   padding-bottom: 22px;
   border-bottom: 1px solid $grey-second;
@@ -9,7 +10,7 @@
 
   &:not(:last-child)::before {
     @media (min-width: $tablet-width) {
-      @include element(324px, 430px);
+      @include element(324px, calc(100% - 74px));
       background-color: $grey-basic;
       position: absolute;
       margin: 70px auto 0;
@@ -23,7 +24,7 @@
 
   &:last-child::before {
     @media (min-width: $tablet-width) {
-      @include element(324px, 430px);
+      @include element(324px, calc(100% - 74px));
       border: 2px solid $grey-basic;
       position: absolute;
       margin: 70px auto 0;
