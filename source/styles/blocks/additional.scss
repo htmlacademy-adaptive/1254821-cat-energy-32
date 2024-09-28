@@ -8,11 +8,11 @@
   position: absolute;
   overflow-x: hidden;
   left: 250px;
-  top: 40px;
+  top: 38px;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    top: 90px;
+    top: 88px;
     left: 0;
   }
 }

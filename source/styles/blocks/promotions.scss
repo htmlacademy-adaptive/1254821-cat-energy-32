@@ -7,12 +7,12 @@
   background-color: $green-basic;
   position: absolute;
   overflow-x: hidden;
-  left: 250px;
+  left: 30%;
   top: 50px;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    top: 96px;
+    top: 94px;
     left: 0;
   }
 
@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(32px, 32px);
-    min-width: 300px;
+    min-width: 280px;
     text-align: left;
     margin-right: auto;
     padding: 80px 40px 66px;
